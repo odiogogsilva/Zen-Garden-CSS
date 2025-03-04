@@ -1,0 +1,464 @@
+/*
+Obrigatório
+*/
+*{
+	box-sizing: border-box;
+}
+body {
+	margin: 0px;
+	padding: 0px;
+}
+
+img {
+	max-width: 100%;
+}
+/*
+Obrigatório
+*/
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'WindSong';
+    src: url('../fonts/WindSong/WindSong-Regular.ttf') format('truetype');
+}
+
+.windsong {
+	font-family: 'WindSong';
+}
+
+#css-zen-garden {
+    background-color: #FFFFFF;
+}
+
+h1 {
+    font-family: 'WindSong';
+    font-weight: 900;
+    font-size: 79px;
+    margin-left: 479px;
+    margin-top: 47px;
+    color: #0e4b0c;
+}
+
+h2 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    margin-left: 352px;
+    margin-top: 178px;
+    letter-spacing: 3px;
+    color: #0e4b0c;
+}
+
+h3 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 15px;
+    letter-spacing: 3px;
+    text-decoration: solid;
+    color: #3E561E;
+}
+
+a:link {  
+    font-weight: 400;
+    text-decoration: none;
+    color: #006711;
+}
+
+a:visited { 
+	font-weight: bold; 
+	text-decoration: none; 
+	color: #0E4B0C;
+}
+
+a:hover, a:focus, a:active { 
+	text-decoration: underline; 
+	color: #0E4B0C;
+}
+
+abbr {
+	border-bottom: none;
+}
+
+p {
+    text-align: justify;
+    font-family: serif;
+}
+
+.page-wrapper {
+    background: transparent url(../img/paper12.png) top left no-repeat;
+    background-size: 100%;
+}
+
+.intro {
+    background: transparent url(../img/catos.png) no-repeat top right;
+    background-position: 862px 21px;
+    background-size: 600px 830px;
+    padding: 100px 20px 470px;  
+    top: 47px;
+	position: relative;
+    z-index: 200;
+}
+
+.intro::after {
+    background: transparent url(../img/minion.png) no-repeat top right;
+    content: "";
+    position: absolute;
+    z-index: 109;
+    background-size: 327px;
+    top: 535px;
+    height: 752px;
+    right: 77px;
+    width: 424px;
+    background-size: 214px;
+    animation: banana 2s alternate infinite;
+}
+
+.summary {
+    background-color: #DFC7AD;
+    color: #FFFFFF;
+    width: 17vw;
+    margin-left: 340px;
+    padding: 455px 25px 206px 30px;
+    position: absolute;
+    z-index: 99;
+    height: 629px;
+    top: 474px;
+}
+
+.preamble::before {
+    content: "";
+    width: 353px;
+    height: 249px;
+    position: absolute;
+    top: 415px;
+    bottom: 0px;
+    background-color: #9DAA7E;
+}
+
+
+.preamble {
+    color: #FFFFFF;
+    background-color: #9DAA7E;
+    top: 895px;
+    margin-left: 450px;
+    padding: 53px 301px 14px 408px;
+    position: absolute;
+    z-index: 98;
+    height: 416px;
+    width: 1060px;
+}
+
+.preamble::after {
+    background: transparent url(../img/flor.png) no-repeat top right;
+    position: absolute;
+    z-index: 109;
+    background-size: 327px;
+    top: 485px;
+    height: 752px;
+    content: "";
+    right: -110px;
+    width: 424px;
+    background-size: 270px;
+    animation: banana 5s alternate infinite;
+}
+
+
+.preamble::after:hover {
+    background-size: 100px;
+}
+
+.explanation {
+    color: #FFFFFF;
+    background-color: #A9B59F;
+    margin-left: 148px;
+    margin-right: 628px;
+    padding: 44px 356px 13px 214px;
+    position: absolute;
+    top: 1473px;
+    z-index: 101;
+    height: 433px;
+    width: 914px;
+}
+
+.explanation::after {
+    content: "";
+    width: 407px;
+    height: 249px;
+    position: absolute;
+    top: 432px;
+    bottom: 0px;
+    background-color: #A9B59F;
+    margin-left: 293px;
+}
+
+.participation::before {
+    content: "";
+    width: 415px;
+    height: 197px;
+    position: absolute;
+    top: 565px;
+    bottom: 1px;
+    background-color: #DFC7AD;
+    margin-left: -655px;
+}
+
+.participation {
+    color: #FFFFFF;
+    background-color: #DFC7AD;
+    padding: 61px 77px 13px 655px;
+    top: 1102px;
+    position: relative;
+    margin-left: 486px;
+    z-index: 100;
+    width: 1045px;
+    height: 566px;
+}
+
+.participation::after {
+    background: transparent url(../img/folha.png) no-repeat top right;
+    content: "";
+    background-position: 81px -20px;
+    position: absolute;
+    z-index: 109;
+    background-size: 327px;
+    top: 340px;
+    height: 752px;
+    right: 962px;
+    width: 424px;
+    background-size: 270px;
+    animation: banana 5s alternate infinite;
+}
+
+.benefits {
+    color: #FFFFFF;
+    background-color: #787833;
+    height: 380px;
+    padding: 106px 308px 13px 308px;
+    top: 2759px;
+    position: absolute;
+    margin-left: 366px;
+    width: 969px;
+}
+
+.requirements {
+    background: url(../img/padrao.jpg);
+    top: 1646px;
+    background-position: -3px -21px;
+    background-size: 53%;
+    background-color: #E7AE77;
+    padding: 38px 533px 50px 511px;
+    position: relative;
+    z-index: 99;
+}
+
+.requirements::after {
+    content: "";
+    width: 679px;
+    height: 400px;
+    position: absolute;
+    top: 43px;
+    bottom: 9px;
+    background-color: #ffffff;
+    z-index: -1;
+    margin-left: -16px;
+}
+
+
+footer {
+    text-align: center;
+    margin-left: -1216px;
+    bottom: 278px;
+    top: 2120px;
+    margin-bottom: 114px;
+}
+
+[role=contentinfo] {
+    background-color: #E59043;
+    position: absolute;
+    margin-right: 30px;
+    padding: 57px 119px 13px 143px;
+    margin-left: -145px;
+    bottom: -148px;
+    width: 969px;
+    top: 484px;
+    color: darkgreen;
+}
+
+[role=navigation] {
+    width: 219px;
+    height: 242px;
+    position: absolute;
+    margin-right: 75px;
+    margin-left: 257px;
+    z-index: 120;
+    color: white;
+    top: 1841px;
+}
+
+.select {
+    background-color: #FFFFFF;
+    width: 242px;
+    height: 242px;
+    position: absolute;
+    bottom: -2063px;
+    left: 258px;
+}
+
+[role=zen-resources] {
+    background-color: black;
+    width: 242px;
+    height: 242px;
+    position: absolute;
+    margin-right: 75px;
+    margin-left: 181px;
+    bottom: -2706px;
+    z-index: 120;
+    color: white;
+}
+
+.sidebar {
+    background-color: #FFFFFF;
+    border-color: #787833;
+    color: black;
+	margin-left: 600px; 
+	top: 1010px; 
+	right: 80px;
+    padding: 5px 100px 0px 30px;
+}
+
+.sidebar .wrapper { 
+    font: 10px arial;
+    padding: 10px;
+    margin-top: -114px;
+    width: 130px;
+    margin-left: -487px;
+}
+
+.sidebar ul {
+	margin: 0;
+	padding: 0;
+}
+.sidebar li {
+	line-height: 1.3em;
+    background-color: #FFFFFF;
+    display: block;
+    padding-top: 20px;
+    margin-bottom: 5px;
+    list-style-type: none;
+}
+.sidebar li a:link {
+	color: #988F5E;
+}
+.sidebar li a:visited {
+	color: #B3AE94;
+} 
+
+
+.extra1 { 
+	position: absolute; 
+	top: 40px; 
+	right: 0; 
+	width: 148px; 
+	height: 110px;
+}
+
+.design-selection {
+    position: relative;
+}
+
+.design-selection ul {
+    width: 220px;
+    height: 119px;
+    display: flex;
+}
+
+.design-selection ul li {
+    line-height: 3.3em;
+    background-color: #0e4b0c;
+    display: block;
+    list-style-type: none;
+    min-width: 50%;
+    flex: 1;
+    min-height: 100%;
+    padding-top: 0;
+    margin-bottom: 0;
+}
+
+.design-selection nav[role=navigation] ul li:nth-child(1) {
+    background: #9ad069;
+}
+.design-selection nav[role=navigation] ul li:nth-child(2) {
+    background: #a9d261;
+}
+.design-selection nav[role=navigation] ul li:nth-child(3) {
+    background: #92b138;
+}
+.design-selection nav[role=navigation] ul li:nth-child(4) {
+    background: #7cc386;
+}
+.design-selection nav[role=navigation] ul li:nth-child(5) {
+    background: #92cc84;
+}
+.design-selection nav[role=navigation] ul li:nth-child(6) {
+    background: #a4d59b;
+}
+.design-selection nav[role=navigation] ul li:nth-child(7) {
+    background: #c1e5ba;
+}
+.design-selection nav[role=navigation] ul li:nth-child(8) {
+    background: #e6f6e3;
+}
+
+.design-archives nav {
+    display: none;
+}
+
+.zen-resources {
+    position: absolute;
+    z-index: 9999;
+}
+
+[role=navigation]::after {
+    background: transparent url(../img/folha2.png) no-repeat top right;
+    content: "";
+    position: absolute;
+    z-index: 109;
+    background-size: 327px;
+    top: -164px;
+    height: 497px;
+    right: -962px;
+    width: 424px;
+    background-size: 238px;
+}
+
+.zen-resources h3.resources {
+    cursor: default;
+}
+
+.zen-resources *:not(h3) {
+    display: none;
+}
+
+.zen-resources:hover * {
+    display: block;
+}
+
+
+
+@keyframes banana {
+    0% {
+        background-position: 37px 17px;
+        transform: rotate(0deg);
+    }
+    50% {
+        background-position: 37px 27px;
+        transform: rotate(5deg);
+    }
+    100% {
+        background-position: 37px 17px;
+        transform: rotate(0deg);
+    }
+}
+
